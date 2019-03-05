@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+<body>
+  <div class="container-fluid" id="container">
+      <h1 style="color: beige; align-content: center; font-size: 20px;"><b>CALCULATOR<br>MAHODAY</b></h1>
+    <div class="row">
+      <form name="calc">
+        <input type="text" id="input" name="result" readonly>
+      </form>
+    </div>
+    <div class="btn-toolbar mb-3" role="toolbar" id="buttons" style="padding-left: 22%; margin-bottom: 20px;" >         
+    <div class="row" >          
+      <div class="btn-group-lg mr-2" role="group" >
+         <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="1">1</button>
+         <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="2">2</button>
+         <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="3">3</button>
+         <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="+">+</button>
+      </div>
+    </div>
+      <div class="row">          
+        <div class="btn-group-lg" role="group" >
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="4">4</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="5">5</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="6">6</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="-">-</button>
+        </div>
+      </div>
+      <div class="row">          
+        <div class="btn-group-lg" role="group" >
+          <button type="button" style="margin:3px;"class="btn btn-secondary trig" onclick="myFunction(this.id)" id="7">7</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="8">8</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="9">9</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="*">*</button>
+        </div>
+      </div>
+      <div class="row">          
+        <div class="btn-group-lg" role="group">
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="clearScreen()" id="C">C</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="0">0</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="myFunction(this.id)" id="/">/</button>.</button>
+          <button type="button" style="margin:3px;" class="btn btn-secondary trig" onclick="calculate()" id="=">=</button>
+        </div>
+      </div>
+      </div> 
+  </div>
+  <script src="calc.js"></script>
+</body>
+</html>

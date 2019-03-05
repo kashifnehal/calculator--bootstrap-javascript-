@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+  }
+  
+body{
+    background-color:grey;    
+}
+
+#container{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    background-image: url(nnn.jpg);
+}
+
+#input{
+    height: 70px;
+    margin: 15px;
+    width: 70%;
+    align-content: center;
+}
+
+.trig:hover{
+    transform: scale(1.08);
+}
+
+
